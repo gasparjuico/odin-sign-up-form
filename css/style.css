@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    /* border: 1px dotted black; */
+}
+
+.html {
+    /* Set base font size to 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(./images/harry-david-X_Wqkk71-ts-unsplash.jpg);
+    background-size: cover;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    margin-top: 20%;
+    padding: 1rem;
+}
+
+.hero-text {
+    font-family: 'Norse', 'Times New Roman', Times, serif;
+    font-size: 8rem;
+    color: white;
+}
+
+img {
+    height: 8rem;
+}
+
+footer {
+    align-self: center;
+    margin-top: auto;
+    padding: 1rem;
+    color: white;
+    font-size: small;
+}
+
+footer > a {
+    color: white;
+}
+
+.right-section {
+    width: 60%;
+    background-color: rgb(240, 240, 240);
+}
+
+.text-container {
+    margin-top: 8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 4rem;
+    padding-right: 6rem;
+}
+
+.text-container p {
+    margin-bottom: 2rem;
+}
+
+.background-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: white;
+    box-shadow: 0px 10px 20px -20px black;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+.background-container > p {
+    width: 100%;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    width: 750px
+}
+
+label {
+    display: block;
+    width: 200px;
+    color:rgb(97, 97, 97);
+}
+
+input {
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+}
+
+button {
+    margin: 2rem;
+    margin-left: 4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(77, 77, 77);
+
+    cursor: pointer;
+}
+
+form + p {
+    margin-left: 4rem;
+}
+
+.right-section a:link {
+    color: rgb(77, 77, 77);
+}
+
+
+
+
+/* Width: Percentage with max width / ch */
+/* Height: Min height if needed */
+/* Padding/Margin: rem or px */
+/* Shadows or borders: px */
+/* vw or vh sometimes useful (ex: embedded videos or responsive font size[px + vw]) */
+/* If vanilla CSS, check normalize or resets */
